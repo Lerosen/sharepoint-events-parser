@@ -1,0 +1,8 @@
+{
+    "name": "sharepoint-events-parser",
+    "version": "0.0.1",
+    "description": "Parsing sharepoint events, forked",
+    "author": "JoeHogan",
+    "license": "ISC",
+    "dependencies": {}
+}
