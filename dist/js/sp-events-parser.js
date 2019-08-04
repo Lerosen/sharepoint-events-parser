@@ -152,9 +152,11 @@ var spEventsParser = {
 				var init = this.parseDate(e.EventDate,e.fAllDayEvent);
 				var weekdayOfMonth = arr[arr.indexOf("weekdayOfMonth")+1];
 				var temp = new Date();
+				var startCond = new Date(start)
+				startCond.setDate(1)
 				while(loop){
 					total++;
-					if((new Date(init)).getTime() >= start.getTime()){
+					if((new Date(init)).getTime() >= startCond.getTime()){
 						var nd = new Date(init);
 						nd.setDate(1); //set to first day of month
 						if(arr.indexOf("weekday")!=-1){ //find first weekday - if not saturday or sunday, then current date is a weekday
